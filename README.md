@@ -61,3 +61,4 @@ Example:
 ## Notes
 - The iOS app will prefer the AI recommendation. If the backend fails, it falls back to a deterministic local engine.
 - Wallet data is stored locally in SQLite (`wallet.db`) inside the app sandbox.
+- By Steven Riley
