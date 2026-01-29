@@ -1,0 +1,28 @@
+[build-system]
+requires = ["briefcase"]
+build-backend = "briefcase.build_system"
+
+[project]
+name = "card-rewards"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "toga>=0.4.0",
+  "requests>=2.32.0",
+  "rubicon-objc>=0.4.9"
+]
+
+[tool.briefcase]
+project_name = "Card Rewards"
+bundle = "com.yourcompany"
+version = "0.1.0"
+url = "https://yourcompany.example"
+license = "Proprietary"
+author = "Your Company"
+author_email = "mobile@yourcompany.example"
+
+[tool.briefcase.app.card_rewards]
+formal_name = "Card Rewards"
+description = "Recommends the best credit card based on store location."
+sources = ["src/card_rewards"]
+requires = ["toga>=0.4.0", "requests>=2.32.0", "rubicon-objc>=0.4.9"]
